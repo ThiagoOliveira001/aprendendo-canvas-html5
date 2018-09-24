@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagens 2</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="300" height="300"></canvas>
+    <script>
+        var canvas = document.getElementById('meu_canvas');
+        var context = canvas.getContext('2d');
+
+        //Carregar imagem
+        var imagem = new Image();
+        imagem.src = 'images/explosao.png';
+        imagem.onload = () => {
+            context.drawImage(
+                imagem,
+                80, 10, 60, 65, //Area do recorte
+                20, 20, 60, 65 //Desenho no canvas
+            );
+        } 
+    </script>
+</body>
+</html>
