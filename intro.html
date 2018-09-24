@@ -18,8 +18,17 @@
             //Obtendo contexto
             var context = canvas.getContext('2d');
 
+            //Prenchendo de vermelho
+            context.fillStyle = 'red';
+
             //Desenhando um retangulo
             context.fillRect(50, 50, 100, 100);
+
+            //Contorno azul de 3px
+            context.lineWidth = 3;
+            context.strokeStyle = 'blue';
+            context.strokeRect(50,50,100,100);
+
         </script>
     </body>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caminhos</title>
+    </head>
+    <body>
+        <canvas id="meu_canvas" width="300" height="300"></canvas>
+        <script>
+            var canvas = document.getElementById('meu_canvas');
+            var context = canvas.getContext('2d');
+
+            // Inicia path, apaga desenhos anteriores
+            context.beginPath();
+
+            //Desenhar estrela
+            context.moveTo(75, 250);
+            context.lineTo(150, 50);
+            context.lineTo(225, 250);
+            context.lineTo(50, 120);
+            context.lineTo(250, 120);
+            context.lineTo(75, 250);
+
+            //Configurar linha
+            context.lineWidth = 2;
+            context.strokeStyle = 'red';
+
+            //Desenhar linhas
+            context.stroke();
+        </script>
+    </body>
+</html>
